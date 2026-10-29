@@ -7,9 +7,9 @@ executors:
   ruby-latest:
     resource_class: small
     docker:
-      - image: circleci/ruby:2.7
+      - image: cimg/ruby:3.4
         environment:
-          BUNDLE_VERSION: "~> 1.17"
+          BUNDLE_VERSION: "2.6.9"
 
 # yaml anchor filters
 master_only: &master_only

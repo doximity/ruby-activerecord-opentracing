@@ -22,15 +22,15 @@ Gem::Specification.new do |spec|
   end
   spec.require_paths = ["lib"]
 
-  spec.add_development_dependency "bundler", "~> 1.17"
+  spec.add_development_dependency "bundler", ">= 2.0"
   spec.add_development_dependency "opentracing_test_tracer", "~> 0.1"
   spec.add_development_dependency "rake", "~> 13.0"
-  spec.add_development_dependency "rspec", "~> 3.9.0"
+  spec.add_development_dependency "rspec", "~> 3.13"
   spec.add_development_dependency "rspec_junit_formatter"
-  spec.add_development_dependency "rubocop", "~> 0.78.0"
-  spec.add_development_dependency "rubocop-rspec", "~> 1.37.0"
+  spec.add_development_dependency "rubocop", "~> 1.0"
+  spec.add_development_dependency "rubocop-rspec", "~> 3.0"
   spec.add_development_dependency "sdoc"
-  spec.add_development_dependency "sqlite3", "~> 1.4.2"
+  spec.add_development_dependency "sqlite3", "~> 2.1"
 
   spec.add_dependency "activerecord"
   spec.add_dependency "opentracing", "~> 0.5"
