@@ -1,5 +1,4 @@
 .rspec_status
-/.ruby-version
 /*.gem
 /.bundle/
 /coverage/
