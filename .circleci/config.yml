@@ -54,12 +54,13 @@ jobs:
           name: Install Bundler specific version
           command: |
             gem install bundler --version "${BUNDLE_VERSION}" --force
+            bundle config set --local path 'vendor/bundle'
       - restore_cache:
           keys:
             - v1-bundle-{{ checksum "Gemfile.lock" }}-
       - run:
           name: Install Ruby Dependencies
-          command: bundle install --path=vendor/bundle # install every time so we don't have to package vendor/bundle with the gem
+          command: bundle install # install every time so we don't have to package vendor/bundle with the gem
       - save_cache:
           key: v1-bundle-{{ checksum "Gemfile.lock" }}-
           paths:
