@@ -25,13 +25,11 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "bundler", ">= 2.0"
   spec.add_development_dependency "opentracing_test_tracer", "~> 0.1"
   spec.add_development_dependency "rake", "~> 13.0"
-  # sdoc 2.6.5 (latest) still references RDoc::GhostMethod, removed in rdoc 8.0
-  spec.add_development_dependency "rdoc", "< 8"
   spec.add_development_dependency "rspec", "~> 3.13"
   spec.add_development_dependency "rspec_junit_formatter"
   spec.add_development_dependency "rubocop", "~> 1.0"
   spec.add_development_dependency "rubocop-rspec", "~> 3.0"
-  spec.add_development_dependency "sdoc"
+  spec.add_development_dependency "rdoc"
   spec.add_development_dependency "sqlite3", "~> 2.1"
 
   spec.add_dependency "activerecord"
